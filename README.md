@@ -54,3 +54,5 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+Photo by Lukas: https://www.pexels.com/photo/variety-of-vegetables-616401/
