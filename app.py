@@ -17,10 +17,10 @@ app.secret_key = os.environ.get("SECRET_KEY")
 
 mongo = PyMongo(app)
 
-
 @app.route("/")
-def index():
-    return render_template("index.html")
+@app.route("/home")
+def home():
+    return render_template("home.html")
 
 
 @app.route("/search")
@@ -61,9 +61,9 @@ def signin():
         if existing_user:
             # ensure hashed password matches user input
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    flash("Welcome, {}".format(request.form.get("username")))
+                    existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                flash("Welcome, {}".format(request.form.get("username")))
             else:
                 # invalid password match
                 flash("Incorrect Username and/or Password")

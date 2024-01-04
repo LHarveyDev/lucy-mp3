@@ -1,23 +1,13 @@
-{% extends "index.html" %} 
+{% extends "base.html" %} 
 {% block content %}
 
-<div class="parentContainer">
-  <img src="static/images/food.jpg" alt="table surrounded by fresh food" />
-  <div class="centered">
-    <h2>Enter a name, ingredient or cuisine below to find a recipe.</h2>
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="button">Search</button>
-      </div>
-      <input
-        type="text"
-        class="form-control"
-        placeholder=""
-        aria-label=""
-        aria-describedby="basic-addon1"
-      />
+<h1>The Kitchen Cupboard</h1>
+<p>Find a new recipe to try. You can search by name, cuisine or level of difficulty</p>
+    <div class="row">
+    <div class="input-field col s12">
+      <input id="keyword" type="text" class="validate">
+      <label for="keyword">Search</label>
     </div>
   </div>
-</div>
 
 {% endblock %}

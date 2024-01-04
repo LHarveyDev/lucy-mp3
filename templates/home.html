@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="welcome">
+    <h1>The Kitchen Cupboard</h1>
+    <p>Join the Kitchen Cupboard community to share your recipes with others.<br> Alternatively use the search
+        function above to find a recipe.</p>
+    <a href="{{url_for('register')}}">
+        <a class="waves-effect waves-light btn">Join</a>
+    </a>
+</div>
+
+{% endblock %}

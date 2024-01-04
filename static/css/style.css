@@ -1,27 +1,10 @@
-img {
-  height: 100%;
-  width: 100%;
+body {
+    background-image: url('/static/images/food.jpg');
+    background-size: cover;
 }
 
-.parentContainer {
-  position: relative;
-  text-align: center;
-  color: white;
+.welcome {
+    position: relative;
+    text-align: center;
+    color: white;
 }
-
-.centered {
-  position: absolute;
-  top: 30%;
-  left: 35%;
-}
-
-/* Text */
-
-h1 {
-    font-size: 60px;
-}
-
-p {
-    font-size: 20px;
-}
-
